@@ -1,0 +1,52 @@
+<!-- Three.JS Earth WITH mouse Controls -->
+<!DOCTYPE HTML>
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>WebGL Earth</title>
+  	<style>
+  		body { margin: 0; overflow: hidden; background-color: #000; }
+  		.tm  { position: absolute; top: 10px; right: 10px; }
+  		.webgl-error { font: 15px/30px monospace; text-align: center; color: #fff; margin: 50px; }
+  		.webgl-error a { color: #fff; }
+      </style>
+  </head>
+  <body>
+
+    <!--<a href="" class="myButton" id="but"></a>-->
+    <ul class="menu">
+      <li><!--Angry/red--><div class="slice"/></li>
+      <li><!--Excited/yellow--><div class="slice"/></li>
+      <li><!--Happy/orange--><div class="slice"/></li>
+      <li><!--Sad/blue--><div class="slice"/></li>
+      <li><!--Bored/purple--><div class="slice"/></li>
+      <li><!--Calm/green--><div class="slice"/></li>
+    </ul>    
+    <div class = "pointer"></div>
+
+  	<div id="webgl"></div>
+    <form id="form">
+      <!--action="/action_page.php">-->
+      <!--<label for="fname">Name</label>-->
+      <input type="text" id="fname" name="firstname" placeholder="Name..">
+  
+      <select id="Terrain" name="land">
+        <option value="Grass">Happy</option>
+        <option value="Dessert">Sad</option>
+        <option value="something">Jealous</option>
+        <option value="Grass">Bored</option>
+        <option value="something">Interested</option>
+      </select>
+        
+      <input type="submit" value="Submit">
+    </form>
+  	<a href="http://ahmedbadary.ml/" class="tm">
+  		<img src="http://ahmedbadary.ml/main_files/logo.png">
+  	</a>
+  	<script src="http://final-project-zeegeeko.c9users.io/three.min.js"></script>
+  	<script src="http://final-project-zeegeeko.c9users.io/Detector.js"></script>		
+  	<script src="http://final-project-zeegeeko.c9users.io/TrackballControls.js"></script>
+  	<script src="http://final-project-zeegeeko.c9users.io/earth.js"></script>
+  </body>
+</html>
